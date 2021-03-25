@@ -1,0 +1,138 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*global styles*/
+/* div{
+  border-style: solid;
+  border-color:red;
+  border-width:1px;
+} */
+.section_header{
+  background-image:linear-gradient(to top, #b4b3b7, #898795, #b4b3b7);
+  color:#ffffff;
+  padding: 10px;
+  font-size: 130%;
+}
+
+/*body styles*/
+#container{
+  min-height:500px;
+  width:970px;
+  background-image:radial-gradient(circle,white, #6f5964,#1a0a0e);
+}
+  #title_block{
+    background-color:#f6f6f6;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:15px;
+  }
+    #title_block h1{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      /* this isn't the right font but I have no idea what is so I am doing this to show I can change it =D */
+    }
+  #about_block{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+  }
+    #photo_of_me{
+      display:flex;
+      width:45%;
+      height:45%;
+      border-color:#c0c0c0;
+      border-width:5px;
+      border-style: solid;
+    }
+    #about_me{
+      margin-left:20px;
+      background-image:linear-gradient(to left, #dacbd9,#ffffff);
+      min-height:50px;
+      flex:1;
+    }
+      #about_me p{
+        padding: 10px;
+      }
+      #about_me a{
+        padding:10px;
+        color: #000000;
+      }
+  #my_projects{
+    display:flex;
+    justify-content:space-around;
+    margin:10px;
+    margin-bottom: 25px;
+  }
+    .my_projects_tab{
+      background-image:linear-gradient(to left, #dacbd9,#ffffff);
+      flex:1;
+      margin-left:12px;
+      margin-right:12px;
+      align-items:flex-start;
+    }
+    .my_projects_tab h2{
+      font-size:115%;
+    }
+      .about_project{
+        display:flex;
+        flex-direction:column;
+        min-height:400px;
+      }
+        .about_project img{
+          width:100%;
+          height:auto;
+          flex:1;
+        }
+        .about_project p{
+          flex:1;
+          padding: 8px;
+        }
+      .project_tech{
+        display:flex;
+        flex-direction:column; 
+        justify-content:flex-start;
+      }
+      .tech_icons{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:flex-start;
+        margin-left:4px;
+      }
+        .tech_icons img{
+          width: 40px;
+          height:auto;
+          margin:8px;
+        }
+      .project_tech a{
+        text-align:center;
+        margin: 15px auto;
+        padding:10px;
+        background-color:#407d61;
+        border-radius: 10px;
+        color:#ffffff;
+        text-decoration: none;
+      }
+
+    #footer{
+      background-color:#f9f9f9;
+      text-align:center;
+      margin-top:10px;
+      padding:5px;
+    }
+      #link_list{
+        margin:10px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+        #link_list img{
+          width:1em;
+          height:auto;
+          margin:2px;
+        }
+        #link_list a{
+          color: black;
+          margin:2px;
+        }
